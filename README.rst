@@ -1,7 +1,7 @@
 psa-recovery
 ============
 
-Passwordless Email Auth + Simple password recovery mechanism
+Email Auth + Simple password recovery mechanism
 
 How to run this application
 ---------------------------
