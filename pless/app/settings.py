@@ -70,9 +70,10 @@ SOCIAL_AUTH_PIPELINE = (
     'social.pipeline.social_auth.auth_allowed',
     'social.pipeline.social_auth.social_user',
     'social.pipeline.user.get_username',
-    'social.pipeline.mail.mail_validation',
     'passwordless.pipeline.user_by_email',
+    'passwordless.pipeline.mail_validation',
     'social.pipeline.user.create_user',
+    'passwordless.pipeline.set_password',
     'social.pipeline.social_auth.associate_user',
     'social.pipeline.social_auth.load_extra_data',
     'social.pipeline.user.user_details'
