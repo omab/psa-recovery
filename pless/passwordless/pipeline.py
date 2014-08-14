@@ -27,7 +27,6 @@ def user_by_email(backend, details, *args, **kwargs):
 
 def set_password(backend, user, is_new=False, *args, **kwargs):
     if backend.name == 'email' and is_new:
-        print "SETTING PASSWORD:", kwargs['password']
         user.set_password(kwargs['password'])
         user.save()
 
